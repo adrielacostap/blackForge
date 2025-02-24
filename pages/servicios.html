@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - blackForge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body class="vh-100 overflow hidden">
     <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black opacity-75 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../assets/BlackForge1.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SideBar -->
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img class="logo" src="../assets/BlackForge1.svg" alt="logo">
+                    </h5>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end align-items-center">
+                    <ul class="navbar-nav justify-content-end flex-drow-1 fs-5 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header 
     <header class="header">
         <a href="../index.html">
             <img class="logo" src="../assets/BlackForge1.svg" alt="logo">
@@ -38,100 +81,210 @@
                 </li>
             </ul>
     </header>
-
-
-    <section class="desarrollo">
-        <div class="container1">
-            <h2>Desarrollo de Software</h2>
-            <p>
-                Creamos soluciones digitales a medida que impulsan la eficiencia y productividad de tu negocio.
-                Nuestro equipo combina experiencia técnica y creatividad para ofrecer productos innovadores y de alto rendimiento.
-            </p>
-            <h3>Incluye:</h3>
-            <ul>
-                <li>Aplicaciones web: Plataformas escalables, responsivas y optimizadas para diversas necesidades empresariales.</li>
-                <li>Aplicaciones móviles: Desarrollo de apps funcionales para iOS y Android, centradas en la experiencia del usuario.</li>
-                <li>Software empresarial: Soluciones personalizadas como ERPs, CRMs o sistemas de gestión interna.</li>
-            </ul>
-            <h3>Beneficios:</h3>
-            <ul>
-                <li>Adaptación total a las necesidades de tu empresa.</li>
-                <li>Mejora de la experiencia del usuario.</li>
-                <li>Innovación y escalabilidad.</li>
-            </ul>
-            <button>Conocer Más</button>
+    -->
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container1">
+                        <h2>Desarrollo de Software</h2>
+                        <p>
+                            Creamos soluciones digitales a medida que impulsan la eficiencia y productividad de tu negocio.
+                            Nuestro equipo combina experiencia técnica y creatividad para ofrecer productos innovadores y de alto rendimiento.
+                        </p>
+                        <h3>Incluye:</h3>
+                        <ul>
+                            <li>Aplicaciones web: Plataformas escalables, responsivas y optimizadas para diversas necesidades empresariales.</li>
+                            <li>Aplicaciones móviles: Desarrollo de apps funcionales para iOS y Android, centradas en la experiencia del usuario.</li>
+                            <li>Software empresarial: Soluciones personalizadas como ERPs, CRMs o sistemas de gestión interna.</li>
+                        </ul>
+                        <h3>Beneficios:</h3>
+                        <ul>
+                            <li>Adaptación total a las necesidades de tu empresa.</li>
+                            <li>Mejora de la experiencia del usuario.</li>
+                            <li>Innovación y escalabilidad.</li>
+                        </ul>
+                        <button>Conocer Más</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container1">
+                        <h2>Consultoría IT</h2>
+                        <p>
+                            Te ayudamos a diseñar e implementar estrategias tecnológicas efectivas que optimicen tus recursos y fortalezcan tu infraestructura.
+                            Nuestro enfoque combina análisis detallado y soluciones prácticas.
+                        </p>
+                        <h3>Incluye:</h3>
+                        <ul>
+                            <li>Evaluación de infraestructura: Diagnóstico completo de tu entorno IT para detectar áreas de mejora.</li>
+                            <li>Planificación estratégica: Diseño de estrategias tecnológicas alineadas con tus objetivos de negocio.</li>
+                            <li>Optimización de procesos: Implementación de herramientas y tecnologías para maximizar la productividad.</li>
+                        </ul>
+                        <h3>Beneficios:</h3>
+                        <ul>
+                            <li>Mayor rendimiento y eficiencia operativa.</li>
+                            <li>Reducción de costos innecesarios.</li>
+                            <li>Asesoramiento por expertos en múltiples sectores.</li>
+                        </ul>
+                        <button>Conocer Más</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container1">
+                        <h2>Soporte Técnico</h2>
+                        <p>
+                            Nos aseguramos de que tu negocio funcione sin interrupciones con soluciones rápidas y confiables.
+                            Nuestro equipo de soporte está disponible 24/7 para resolver cualquier inconveniente técnico.
+                        </p>
+                        <h3>Incluye:</h3>
+                        <ul>
+                            <li>Resolución de problemas: Diagnóstico y solución efectiva de fallas técnicas.</li>
+                            <li>Mantenimiento preventivo: Verificación periódica de sistemas para evitar interrupciones.</li>
+                            <li>Soporte continuo: Atención personalizada para garantizar un funcionamiento óptimo.</li>
+                        </ul>
+                        <h3>Beneficios:</h3>
+                        <ul>
+                            <li>Continuidad operativa sin interrupciones.</li>
+                            <li>Respuesta rápida a emergencias.</li>
+                            <li>Equipo técnico especializado y disponible.</li>
+                        </ul>
+                        <button>Conocer Más</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container1">
+                        <h2>Seguridad Cibernética</h2>
+                        <p>
+                            Protegemos tu información y sistemas frente a amenazas digitales con soluciones avanzadas de seguridad.
+                            Nuestro enfoque proactivo asegura la integridad de tus datos y la continuidad de tu negocio.
+                        </p>
+                        <h3>Incluye:</h3>
+                        <ul>
+                            <li>Auditorías de seguridad: Identificación de vulnerabilidades en sistemas y redes.</li>
+                            <li>Soluciones anti-malware: Implementación de herramientas para prevenir y eliminar amenazas.</li>
+                            <li>Monitoreo 24/7: Supervisión constante para detectar y responder a incidentes en tiempo real.</li>
+                        </ul>
+                        <h3>Beneficios:</h3>
+                        <ul>
+                            <li>Protección completa contra ciberataques.</li>
+                            <li>Cumplimiento de normativas de seguridad.</li>
+                            <li>Reducción de riesgos operativos y reputacionales.</li>
+                        </ul>
+                        <button>Conocer Más</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </section>
+        <!--
+        <section class="desarrollo">
+            <div class="container1">
+                <h2>Desarrollo de Software</h2>
+                <p>
+                    Creamos soluciones digitales a medida que impulsan la eficiencia y productividad de tu negocio.
+                    Nuestro equipo combina experiencia técnica y creatividad para ofrecer productos innovadores y de alto rendimiento.
+                </p>
+                <h3>Incluye:</h3>
+                <ul>
+                    <li>Aplicaciones web: Plataformas escalables, responsivas y optimizadas para diversas necesidades empresariales.</li>
+                    <li>Aplicaciones móviles: Desarrollo de apps funcionales para iOS y Android, centradas en la experiencia del usuario.</li>
+                    <li>Software empresarial: Soluciones personalizadas como ERPs, CRMs o sistemas de gestión interna.</li>
+                </ul>
+                <h3>Beneficios:</h3>
+                <ul>
+                    <li>Adaptación total a las necesidades de tu empresa.</li>
+                    <li>Mejora de la experiencia del usuario.</li>
+                    <li>Innovación y escalabilidad.</li>
+                </ul>
+                <button>Conocer Más</button>
+            </div>
+        </section>
 
-    <section class="servicioss">
-        <div class="container1">
-            <h2>Consultoría IT</h2>
-            <p>
-                Te ayudamos a diseñar e implementar estrategias tecnológicas efectivas que optimicen tus recursos y fortalezcan tu infraestructura.
-                Nuestro enfoque combina análisis detallado y soluciones prácticas.
-            </p>
-            <h3>Incluye:</h3>
-            <ul>
-                <li>Evaluación de infraestructura: Diagnóstico completo de tu entorno IT para detectar áreas de mejora.</li>
-                <li>Planificación estratégica: Diseño de estrategias tecnológicas alineadas con tus objetivos de negocio.</li>
-                <li>Optimización de procesos: Implementación de herramientas y tecnologías para maximizar la productividad.</li>
-            </ul>
-            <h3>Beneficios:</h3>
-            <ul>
-                <li>Mayor rendimiento y eficiencia operativa.</li>
-                <li>Reducción de costos innecesarios.</li>
-                <li>Asesoramiento por expertos en múltiples sectores.</li>
-            </ul>
-            <button>Conocer Más</button>
-        </div>
-    </section>
+        
+        <section class="servicioss">
+            <div class="container1">
+                <h2>Consultoría IT</h2>
+                <p>
+                    Te ayudamos a diseñar e implementar estrategias tecnológicas efectivas que optimicen tus recursos y fortalezcan tu infraestructura.
+                    Nuestro enfoque combina análisis detallado y soluciones prácticas.
+                </p>
+                <h3>Incluye:</h3>
+                <ul>
+                    <li>Evaluación de infraestructura: Diagnóstico completo de tu entorno IT para detectar áreas de mejora.</li>
+                    <li>Planificación estratégica: Diseño de estrategias tecnológicas alineadas con tus objetivos de negocio.</li>
+                    <li>Optimización de procesos: Implementación de herramientas y tecnologías para maximizar la productividad.</li>
+                </ul>
+                <h3>Beneficios:</h3>
+                <ul>
+                    <li>Mayor rendimiento y eficiencia operativa.</li>
+                    <li>Reducción de costos innecesarios.</li>
+                    <li>Asesoramiento por expertos en múltiples sectores.</li>
+                </ul>
+                <button>Conocer Más</button>
+            </div>
+        </section>
 
-    <section class="soporte">
-        <div class="container1">
-            <h2>Soporte Técnico</h2>
-            <p>
-                Nos aseguramos de que tu negocio funcione sin interrupciones con soluciones rápidas y confiables.
-                Nuestro equipo de soporte está disponible 24/7 para resolver cualquier inconveniente técnico.
-            </p>
-            <h3>Incluye:</h3>
-            <ul>
-                <li>Resolución de problemas: Diagnóstico y solución efectiva de fallas técnicas.</li>
-                <li>Mantenimiento preventivo: Verificación periódica de sistemas para evitar interrupciones.</li>
-                <li>Soporte continuo: Atención personalizada para garantizar un funcionamiento óptimo.</li>
-            </ul>
-            <h3>Beneficios:</h3>
-            <ul>
-                <li>Continuidad operativa sin interrupciones.</li>
-                <li>Respuesta rápida a emergencias.</li>
-                <li>Equipo técnico especializado y disponible.</li>
-            </ul>
-            <button>Conocer Más</button>
-        </div>
-    </section>
+        <section class="soporte">
+            <div class="container1">
+                <h2>Soporte Técnico</h2>
+                <p>
+                    Nos aseguramos de que tu negocio funcione sin interrupciones con soluciones rápidas y confiables.
+                    Nuestro equipo de soporte está disponible 24/7 para resolver cualquier inconveniente técnico.
+                </p>
+                <h3>Incluye:</h3>
+                <ul>
+                    <li>Resolución de problemas: Diagnóstico y solución efectiva de fallas técnicas.</li>
+                    <li>Mantenimiento preventivo: Verificación periódica de sistemas para evitar interrupciones.</li>
+                    <li>Soporte continuo: Atención personalizada para garantizar un funcionamiento óptimo.</li>
+                </ul>
+                <h3>Beneficios:</h3>
+                <ul>
+                    <li>Continuidad operativa sin interrupciones.</li>
+                    <li>Respuesta rápida a emergencias.</li>
+                    <li>Equipo técnico especializado y disponible.</li>
+                </ul>
+                <button>Conocer Más</button>
+            </div>
+        </section>
 
-    <section class="seguridad">
-        <div class="container1">
-            <h2>Seguridad Cibernética</h2>
-            <p>
-                Protegemos tu información y sistemas frente a amenazas digitales con soluciones avanzadas de seguridad.
-                Nuestro enfoque proactivo asegura la integridad de tus datos y la continuidad de tu negocio.
-            </p>
-            <h3>Incluye:</h3>
-            <ul>
-                <li>Auditorías de seguridad: Identificación de vulnerabilidades en sistemas y redes.</li>
-                <li>Soluciones anti-malware: Implementación de herramientas para prevenir y eliminar amenazas.</li>
-                <li>Monitoreo 24/7: Supervisión constante para detectar y responder a incidentes en tiempo real.</li>
-            </ul>
-            <h3>Beneficios:</h3>
-            <ul>
-                <li>Protección completa contra ciberataques.</li>
-                <li>Cumplimiento de normativas de seguridad.</li>
-                <li>Reducción de riesgos operativos y reputacionales.</li>
-            </ul>
-            <button>Conocer Más</button>
-        </div>
-    </section>
-
+        <section class="seguridad">
+            <div class="container1">
+                <h2>Seguridad Cibernética</h2>
+                <p>
+                    Protegemos tu información y sistemas frente a amenazas digitales con soluciones avanzadas de seguridad.
+                    Nuestro enfoque proactivo asegura la integridad de tus datos y la continuidad de tu negocio.
+                </p>
+                <h3>Incluye:</h3>
+                <ul>
+                    <li>Auditorías de seguridad: Identificación de vulnerabilidades en sistemas y redes.</li>
+                    <li>Soluciones anti-malware: Implementación de herramientas para prevenir y eliminar amenazas.</li>
+                    <li>Monitoreo 24/7: Supervisión constante para detectar y responder a incidentes en tiempo real.</li>
+                </ul>
+                <h3>Beneficios:</h3>
+                <ul>
+                    <li>Protección completa contra ciberataques.</li>
+                    <li>Cumplimiento de normativas de seguridad.</li>
+                    <li>Reducción de riesgos operativos y reputacionales.</li>
+                </ul>
+                <button>Conocer Más</button>
+            </div>
+        </section>
+        -->
+    </main>
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container-info">

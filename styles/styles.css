@@ -32,6 +32,16 @@ img {
 }
 
 /* Header */
+
+@media (max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(75px);
+        font-family: "DM Sans", serif;
+        
+    }
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -47,11 +57,19 @@ img {
     margin: 0.35rem;
 }
 
-.header .logo {
-    display: flex;
+.navbar-brand .logo {
+    display: fixed;
     height: 45px;
     padding: 0 4rem;
-    margin-top: 1px;
+    margin-bottom: 2px;
+    align-items: center;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.offcanvas-title .logo {
+    display: fixed;
+    height: 45px;
     align-items: center;
     -webkit-filter: invert(1);
     filter: invert(1);
