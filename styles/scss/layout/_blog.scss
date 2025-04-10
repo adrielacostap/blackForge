@@ -1,0 +1,41 @@
+.blog {
+    background-color: $background-color_1;
+    margin: 5%;
+    padding: 2% 7%;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 3rem 5rem;
+    }
+  
+    .search-bar input[type=text] {
+      width: 25rem;
+      padding: 0.5rem;
+      margin: 4% 0;
+      border: none;
+      font-size: 1rem;
+      background-color: $background-color_5;
+      border-radius: 2rem;
+      font-family: $font-family_3;
+    }
+  
+    @include respond-to(mobile) {
+      padding: 2% 3%;
+      .blog-grid {
+        margin: 2rem;
+        grid-template-columns: 1fr;
+      }
+      .search-bar input[type=text] { width: 15rem; }
+    }
+    
+    @include respond-to(tablet) {
+      padding: 2% 5%;
+      .blog-grid { margin: 2.5rem 3rem; }
+    }
+  }

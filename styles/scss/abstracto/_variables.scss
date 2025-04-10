@@ -1,0 +1,22 @@
+// Variables de colores
+$color_1: rgba(255, 255, 255, 0.75);
+$color_2: rgba(183, 183, 183, 0.75);
+$color_3: rgba(0, 0, 0, 0.75);
+
+// Variables de fuentes
+$font-family_1: Arial, sans-serif;
+$font-family_2: "DM Sans", serif;
+$font-family_3: "Source Sans 3", serif;
+
+// Variables de backgrounds
+$background-color_1: rgba(255, 255, 255, 0.1);
+$background-color_2: rgba(116, 116, 116, 0.5);
+$background-color_3: rgba(0, 0, 0, 0.5);
+$background-color_4: rgba(255, 255, 255, 0.25);
+$background-color_5: rgba(255, 255, 255, 0.75);
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-desktop: 1024px;
+$breakpoint-tablet-min: ($breakpoint-mobile + 1);
+$breakpoint-tablet-max: ($breakpoint-desktop - 1);

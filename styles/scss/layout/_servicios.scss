@@ -1,0 +1,42 @@
+.servicios {
+    padding: 2rem 1rem;
+    background-color: $background-color_1;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  
+    h2 {
+      @include responsive-text(1.5rem, 1.75rem, 2rem);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 1rem;
+      background-color: $background-color_1;
+      backdrop-filter: blur(75px);
+      color: $color_1;
+      border-radius: 1rem;
+      font-family: $font-family_2;
+    }
+  
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+  
+    .servicio {
+      padding: 1.5rem;
+      background-color: $background-color_1;
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      color: $color_1;
+      font-family: $font-family_3;
+      transition: transform 0.3s;
+  
+      &:hover { transform: translateY(-5px); }
+    }
+  
+    @include respond-to(mobile) { padding: 1.5rem 0.5rem; }
+    @include respond-to(tablet) { padding: 1.75rem 1rem; }
+  }

@@ -1,0 +1,15 @@
+button {
+    padding: 0.5rem 1rem;
+    font-family: $font-family_2;
+    background-color: $background-color_3;
+    backdrop-filter: blur(75px);
+    border-radius: 2rem;
+    color: $color_1;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    transition: background-color 0.3s;
+    
+    &:hover { 
+      background-color: $background-color_4;
+      cursor: pointer;
+    }
+  }

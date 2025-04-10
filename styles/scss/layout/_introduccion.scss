@@ -1,0 +1,42 @@
+.introduccion {
+    padding: 2rem;
+  
+    &-contenido {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      padding: 5% 2%;
+      border-radius: 5rem;
+  
+      @include respond-to(mobile) {
+        margin: 0 1rem;
+        padding: 2% 1%;
+      }
+      
+      @include respond-to(tablet) {
+        margin: 0 2rem;
+        padding: 3% 1.5%;
+      }
+    }
+  
+    &-texto {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 1rem;
+      color: $color_1;
+      font-family: $font-family_3;
+      @include responsive-text(1.25rem, 1.35rem, 1.5rem);
+  
+      img {
+        width: 150px;
+        margin: 1rem 0;
+        filter: invert(1);
+      }
+    }
+  }

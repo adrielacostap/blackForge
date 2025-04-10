@@ -1,0 +1,72 @@
+// _typography.scss
+// Estilos base para textos y encabezados
+
+body {
+    font-family: $font-family_1;
+    line-height: 1.6;
+    color: $color_1;
+  }
+  
+  // Jerarquía de encabezados
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family_2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @include responsive-text(2rem, 2.5rem, 3rem);
+    letter-spacing: -0.05em;
+  }
+  
+  h2 {
+    @include responsive-text(1.75rem, 2rem, 2.25rem);
+    color: $color_1;
+    margin-top: 2rem;
+  }
+  
+  h3 {
+    @include responsive-text(1.5rem, 1.75rem, 2rem);
+    color: $color_2;
+  }
+  
+  // Textos generales
+  p {
+    font-family: $font-family_3;
+    @include responsive-text(1rem, 1.1rem, 1.2rem);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+  
+  // Elementos especiales
+  strong {
+    font-weight: 700;
+    color: $color_1;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  // Listas
+  ul, ol {
+    font-family: $font-family_3;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+  }
+  
+  // Citas
+  blockquote {
+    font-family: $font-family_2;
+    border-left: 3px solid $color_2;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    color: $color_1;
+    font-style: italic;
+  }

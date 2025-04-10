@@ -1,0 +1,29 @@
+.contacto {
+    margin: 4rem;
+    background-color: $background-color_1;
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    border-radius: 5rem;
+    text-align: center;
+    line-height: 2rem;
+    color: $color_1;
+    font-family: $font-family_2;
+    font-size: 1.25rem;
+  
+    button {
+      @include responsive-text(1.5rem, 1.6rem, 1.75rem);
+      height: 4rem;
+      width: 20rem;
+      margin-top: 3rem;
+    }
+  
+    @include respond-to(mobile) {
+      margin: 2rem;
+      padding: 2%;
+    }
+    
+    @include respond-to(tablet) {
+      margin: 3rem;
+      padding: 3%;
+    }
+  }

@@ -1,0 +1,43 @@
+.blog-card {
+    text-align: center;
+    padding: 1.5rem;
+    color: $color_1;
+    background-color: $background-color_1;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    font-family: $font-family_3;
+    transition: background-color 0.3s;
+    line-height: 1.75rem;
+    opacity: 85%;
+    
+    img { border-radius: 1rem; }
+    
+    &:hover {
+      background-color: $background-color_4;
+      opacity: 100%;
+    }
+  }
+  
+  .equipo-miembro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4rem 2rem 0 2rem;
+    color: $color_1;
+    font-family: $font-family_3;
+    background-color: $background-color_1;
+    backdrop-filter: blur(75px);
+    border-radius: 3rem;
+    padding: 2rem;
+    
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 25%;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+    }
+  }

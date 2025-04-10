@@ -1,0 +1,69 @@
+.container1 {
+    background-color: $background-color_1;
+    backdrop-filter: blur(5px);
+    margin: 10%;
+    border-radius: 5rem;
+    padding: 2% 6% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $background-color_1;
+      backdrop-filter: blur(75px);
+      color: $color_1;
+      height: 3rem;
+      width: 50%;
+      border-radius: 2rem;
+      text-align: center;
+      padding: 1rem;
+      margin: auto;
+      font-family: $font-family_2;
+    }
+    
+    p {
+      text-align: center;
+      line-height: 2rem;
+      margin: 2rem;
+      padding: 1rem 2rem;
+      color: $color_1;
+      font-family: $font-family_3;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+    h3 {
+      color: $color_1;
+      margin: 1.5rem 1rem;
+      font-family: $font-family_2;
+      font-size: 1.3rem;
+    }
+    
+    li {
+      color: $color_1;
+      font-family: $font-family_3;
+      font-size: 1.25rem;
+      margin: 1rem 3rem;
+      line-height: 1.5rem;
+    }
+    
+    button {
+      align-self: center;
+      margin-top: 3rem;
+      @include responsive-text(1.5rem, 1.6rem, 1.75rem);
+      height: 4rem;
+      width: 20rem;
+    }
+  
+    @include respond-to(mobile) {
+      padding: 2%;
+      h2 { width: 100%; }
+    }
+    
+    @include respond-to(tablet) {
+      padding: 2% 4%;
+    }
+  }

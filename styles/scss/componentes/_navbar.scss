@@ -1,0 +1,18 @@
+.navbar-brand, .offcanvas-title {
+    .logo {
+      display: block;
+      height: 45px;
+      padding: 0 4rem;
+      margin-bottom: 2px;
+      -webkit-filter: invert(1);
+      filter: invert(1);
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      background-color: $background-color_1;
+      backdrop-filter: blur(75px);
+      font-family: $font-family_2;
+    }
+  }

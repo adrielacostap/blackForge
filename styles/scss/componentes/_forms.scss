@@ -1,0 +1,37 @@
+.search-bar {
+    input[type=text] {
+      width: 25rem;
+      padding: 0.5rem;
+      margin: 4% 0;
+      border: none;
+      font-size: 1rem;
+      background-color: $background-color_5;
+      border-radius: 2rem;
+      font-family: $font-family_3;
+    }
+  }
+  
+  .barra {
+    input[type=text] {
+      padding: 0.5rem;
+      width: 25rem;
+      margin: 4% 0;
+      border: none;
+      font-size: 1rem;
+      background-color: $background-color_5;
+      border-radius: 2rem;
+      font-family: $font-family_3;
+    }
+    
+    textarea {
+      width: 40rem;
+      height: 6rem;
+      padding: 0.5rem;
+      margin: 4% 0;
+      border: none;
+      font-size: 1rem;
+      background-color: $background-color_5;
+      border-radius: 2rem;
+      font-family: $font-family_3;
+    }
+  }

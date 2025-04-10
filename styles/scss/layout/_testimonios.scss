@@ -1,0 +1,51 @@
+.testimonios {
+    margin: 10%;
+    padding: 3%;
+    background-color: $background-color_1;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    @include respond-to(mobile) {
+      margin: 5%;
+      flex-direction: column;
+      padding: 2%;
+    }
+    
+    @include respond-to(tablet) {
+      margin: 7%;
+    }
+  }
+  
+  .testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem;
+    
+    p {
+      margin: 1rem 3rem;
+      line-height: 1.75rem;
+      font-style: italic;
+      color: $color_1;
+      font-family: $font-family_3;
+    }
+  }
+  
+  .testimonio-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+  }
+  
+  cite {
+    display: block;
+    margin: 1rem 3rem;
+    font-weight: bold;
+    color: $color_2;
+    font-family: $font-family_2;
+  }
